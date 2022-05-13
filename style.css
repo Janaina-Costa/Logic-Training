@@ -1,0 +1,57 @@
+#my-canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#my-canvas.active{
+    visibility: visible;
+}
+
+
+
+.modal{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    right: 40%;
+    width:220px;
+    height:max-content;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0  8px 2px rgba(0, 0, 0, 0.301);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 100;
+    /* visibility: hidden;
+            */
+}
+#back-modal{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: 0.8;
+    z-index: 1;
+    visibility: hidden;
+
+  
+
+}
+
+#back-modal.show{
+    visibility: visible;
+}
